@@ -8,6 +8,7 @@ Specifically in this case, this model calculates the electrical power on the bas
 **Data Transformation**: MinMaxScaler (for normalization). This is useful when the value of the attributes has a different scale, which I think is our case. 
 
 **Data Corrections**: I using allowed functions for data corrections - 
+
 data.drop_duplicates(inplace=True) 
 # deleting repeating in dataset
 data.dropna(inplace=True)
