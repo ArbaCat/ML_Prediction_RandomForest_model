@@ -25,6 +25,8 @@ target = 're_m1_svor'
 
 **Model testing**: I think scikit metrics is good tool for testing because they sipmle and clear. MSE, MAE and R2 Score is the basic and clear metrics according to google. And by the end of the script I do one easy and simple manual test. 
 
+**How it works:**
+
 Script loads the data from the provided CSV file, removes any duplicate or empty data, and separates the datetime column.
 
 After that, the data is normalized using MinMaxScaler and split into training and testing sets. The datetime column is added back to the normalized data(I tried to avoid error with missed hh.dd.yyyy in final data(this happens on the one of mine PC, I don't know why))
