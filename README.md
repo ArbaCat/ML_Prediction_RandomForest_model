@@ -31,7 +31,7 @@ Script loads the data from the provided CSV file, removes any duplicate or empty
 
 After that, the data is normalized using MinMaxScaler and split into training and testing sets. The datetime column is added back to the normalized data(I tried to avoid error with missed time in final data(this happens on the one of mine PC, I don't know why))
 (**P.S** I created 2 models because I can't denormalize data back(I have some kind of error with 2D/3D data parameters, I can't solve this problem by my self))
-(**P.S.S:** First model(Full) normalized all parameters, second model(Full_model_re_m1_svor_DENORMALIZED) leave target parameter denormalized. According the metrics the first one is much better, but because of problem with denormalazing I create second one. Basicly I just need a consultation from someone more expirienced than me).
+(**P.S.S:** First model(Full) normalized all parameters, second model(Full_model_re_m1_svor_DENORMALIZED) leave target parameter denormalized. According the metrics the first one is much better, but because of the problem with denormalazing I create second one. Basicly I just need a consultation from someone more expirienced than me).
 
 The normalized data is saved to new CSV files, and then loaded back in for training the model. The script chooses the relevant features and target parameter(column) for training and testing.
 
