@@ -1,0 +1,2 @@
+# SK_Elektrarne_ML_Zadanie
+ML_Prediction_randomforest_model
