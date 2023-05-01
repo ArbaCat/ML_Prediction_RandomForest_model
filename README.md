@@ -1,4 +1,4 @@
-# SK_Elektrarne_ML_Zadanie
+# SK_Elektrarne
 ML_Prediction_randomforest_model
 This is a Python script that performs data normalization and training a machine learning model for regression on the provided dataset.
 Specifically in this case, this model calculates the electrical power on the basis of an example dataset already known in advance. 
