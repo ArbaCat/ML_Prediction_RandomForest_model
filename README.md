@@ -23,7 +23,7 @@ features = ['tepl_m', 'zraz_m', 'tlak_m', 'v_rh_m', 'v_s_m', 'v_rh_m_50', 'v_rh_
 # choosing target parameter(column)
 target = 're_m1_svor'
 
-**Model testing**: I think scikit metrics is good tool for testing because they sipmle and clear. MSE, MAE and R2 Score is the basic and clear metrics according to google. And by the end of the script I do one easy and simple manual test. 
+**Model testing**: I think scikit metrics is good tool for testing because they sipmle and clear. MSE, MAE and R2 Score is the basic and clear metrics. And by the end of the script I do one easy and simple manual test. 
 
 **How it works:**
 
