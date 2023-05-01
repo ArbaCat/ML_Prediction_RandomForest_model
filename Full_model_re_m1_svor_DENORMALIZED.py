@@ -6,9 +6,8 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
 print('Data in progress')
 
-# reading data from DataSet_Not_Normalized.csv(with yours way to file)
-data = pd.read_csv('C:/Python/Data Science/SK elektrarne/Zadanie/Python Part/DataSet/DataSet_Not_Normalized.csv',
-                   parse_dates=['datetime'], index_col='datetime')
+# reading data from DataSet_Not_Normalized.csv
+data = pd.read_csv('DataSet_Not_Normalized.csv', parse_dates=['datetime'], index_col='datetime')
 
 # deleting repeating in dataset
 data.drop_duplicates(inplace=True)
@@ -41,19 +40,15 @@ normalized_train_data.insert(0, 'datetime', datetime_col[train_data.index])
 normalized_test_data.insert(0, 'datetime', datetime_col[test_data.index])
 
 # Saving data to new files
-normalized_train_data.to_csv('C:/Python/Data Science/SK elektrarne/Zadanie/Python Part/DataSet/DataSet_Normalized_train.csv',
-                             index=False)
-normalized_test_data.to_csv('C:/Python/Data Science/SK elektrarne/Zadanie/Python Part/DataSet/DataSet_Normalized_test.csv',
-                            index=False)
+normalized_train_data.to_csv('DataSet_Normalized_train.csv', index=False)
+normalized_test_data.to_csv('DataSet_Normalized_test.csv', index=False)
 
 print(data.isnull().sum())
 print('Finished. Data in DataSet_Normalized_train.csv and DataSet_Normalized_test.csv')
 
 # Loading data from previously created files
-train_data = pd.read_csv('C:/Python/Data Science/SK elektrarne/Zadanie/Python Part/DataSet/DataSet_Normalized_train.csv'
-                         , parse_dates=['datetime'], index_col='datetime')
-test_data = pd.read_csv('C:/Python/Data Science/SK elektrarne/Zadanie/Python Part/DataSet/DataSet_Normalized_test.csv'
-                        , parse_dates=['datetime'], index_col='datetime')
+train_data = pd.read_csv('DataSet_Normalized_train.csv', parse_dates=['datetime'], index_col='datetime')
+test_data = pd.read_csv('DataSet_Normalized_test.csv', parse_dates=['datetime'], index_col='datetime')
 
 # choosing columns for learning
 features = ['tepl_m', 'zraz_m', 'tlak_m', 'v_rh_m', 'v_s_m', 'v_rh_m_50', 'v_rh_m_125', 'vlhk_m']
